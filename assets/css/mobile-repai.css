@@ -1,0 +1,19 @@
+@media (max-width: 739px) {
+    .introduction-img {
+        padding-top: 180%;
+    }
+    .introduction-decription {
+        position: relative;
+        transform: translate(-50%,-200%);
+    }
+    .introduction-decription h1 {
+        font-size: 70px;
+    }
+    .introduction-decription a,
+    .introduction-decription p {
+        font-size: 16px;
+    }
+    .section1 {
+        margin-top: 0;
+    }
+}
