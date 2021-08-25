@@ -15,10 +15,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/grid.css">
-    <link rel="stylesheet" href="/assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
 </head>
+<style>
+    
+</style>
 
 <body>
     <div id="main">
@@ -30,9 +34,11 @@
                 </a>
             </div>
             <div class="mobile-menu">
-                <i class="fas fa-bars"><p>Menu</p></i>
+                <i class="fas fa-bars">
+                    <p>Menu</p>
+                </i>
             </div>
-            <div class="nav-bar">
+            <div class="nav-bar hidend">
                 <ul>
                     <li class="list-item">
                         <a href="#" class="list-item-link active">
@@ -69,59 +75,62 @@
         </div>
         <!-- container -->
         <div class="container">
-            <div class="container__introduction">
-                <div style="background: url('https://preview.colorlib.com/theme/unwind/images/xbg_1.jpg.pagespeed.ic.OPAhN-pmOO.webp') top center / cover no-repeat fixed;"
-                    class="introduction-img">
-                    <div class="overlay"></div>
-                    <div class="introduction-decription">
-                        <p>ENJOY YOUR WONDERFUL HOLIDAYS WITH A GREAT LUXURY EXPERIENCE!</p>
+            <div class="container__introduction"
+                style="background: url('https://preview.colorlib.com/theme/unwind/images/xbg_1.jpg.pagespeed.ic.OPAhN-pmOO.webp') top center / cover no-repeat fixed;">
+                <div class="overlay"></div>
+                <div class="text-container">
+                    <div class="heading-container" data-aos="fade-up">
+                        <span>Enjoy Your Wonderful Holidays With A Great Luxury Experience!</span>
                         <h1>Most Relaxing Place</h1>
-                        <div class="btn active">Take a Tour<i class="fas fa-long-arrow-alt-right"></i></div>
-                        <div class="btn">Learn More<i class="fas fa-long-arrow-alt-right"></i></div>
+                    </div>
+                    <div class="button" data-aos="fade-up">
+                        <div class="btn active">Take A Tour </div>
+                        <div class="btn">Learn More </div>
                     </div>
                 </div>
-                <div style=" position: absolute;
-                            left: 0;
-                            right: 0;
-                            margin-top: -80px;" class="boxed grid wide">
-                    <div class="row">
-                        <div class="col l-2-4 m-2-4 c-12 m-6 c-12">
-                            <div class="box">
-                                <div>
-                                    <p>Check-In</p>
+            </div>
+            <!-- boxed -->
+            <div class="container__boxed">
+                <div class="grid wide">
+                    <div class="row" data-aos="fade-up" data-aos-offset="0">
+                        <div class="col l-2-4 m-6 c-12">
+                            <div class="item-boxed">
+                                <label>Check-In</label>
+                                <div class="input">
                                     <span><i class="fas fa-calendar-alt"></i>Check-In Date</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-2-4 m-2-4 c-12 m-6 c-12">
-                            <div class="box">
-                                <div>
-                                    <p>Check-Out</p>
+                        <div class="col l-2-4 m-6 c-12">
+                            <div class="item-boxed">
+                                <label>Check-Out</label>
+                                <div class="input">
                                     <span><i class="fas fa-calendar-alt"></i>Check-Out Date</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-2-4 m-2-4 c-12 m-6 c-12">
-                            <div class="box">
-                                <div>
-                                    <p>ROOMS</p>
+                        <div class="col l-2-4 m-6 c-12">
+                            <div class="item-boxed">
+                                <label>Rooms</label>
+                                <div class="input">
                                     <span><i class="fas fa-angle-down"></i>Suit</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-2-4 m-2-4 c-12 m-6 c-12">
-                            <div class="box">
-                                <div>
-                                    <p>GUESTS</p>
+                        <div class="col l-2-4 m-6 c-12">
+                            <div class="item-boxed">
+                                <label>Guests</label>
+                                <div class="input">
                                     <span><i class="fas fa-angle-down"></i>1 Person</span>
+
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-2-4 m-2-4 c-12 m-12 c-12">
-                            <div class="box last-box">
-                                <div>
-                                    <p>Check</p>
-                                    <span>Availability</span>
+                        <div class="col l-2-4 m-12 c-12">
+                            <div class="item-boxed">
+                                <div class="input">
+                                    <p class="check">Check</p>
+                                    <p class="sub-check">Availability</p>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +138,7 @@
                 </div>
             </div>
             <!-- section1 -->
-            <div class="section1">
+            <div class="section1" data-aos="fade-up">
                 <div class="grid wide">
                     <div class="row">
                         <div class="section1__left l-6 m-12 c-12">
@@ -249,13 +258,13 @@
             </div>
             <!-- section2 -->
             <div class="section2">
-                <div class="sub-heading">
+                <div class="sub-heading" data-aos="fade-up">
                     <h3>Unwind services</h3>
                     <h2>Explore Our Hotel Services</h2>
                 </div>
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-2 m-3 c-12">
+                        <div class="col l-2 m-3 c-12" data-aos="fade-up">
                             <div class="item">
                                 <a href="#">
                                     <svg id="Capa_1" enable-background="new 0 0 512 512" height="512"
@@ -281,7 +290,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-2 m-3 c-12">
+                        <div class="col l-2 m-3 c-12" data-aos="fade-up" data-aos-delay="100">
                             <div class="item">
                                 <a href="#">
                                     <svg id="Capa_1" enable-background="new 0 0 511.633 511.633" height="512"
@@ -313,7 +322,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-2 m-3 c-12">
+                        <div class="col l-2 m-3 c-12" data-aos="fade-up" data-aos-delay="200">
                             <div class="item">
                                 <a href="#">
                                     <svg height="512pt" viewBox="0 -14 512 512" width="512pt"
@@ -339,7 +348,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-2 m-3 c-12">
+                        <div class="col l-2 m-3 c-12" data-aos="fade-up" data-aos-delay="300">
                             <div class="item">
                                 <a href="#">
                                     <svg id="Layer_1" enable-background="new 0 0 512 512" height="512"
@@ -357,7 +366,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-2 m-3 c-12">
+                        <div class="col l-2 m-3 c-12" data-aos="fade-up" data-aos-delay="400">
                             <div class="item">
                                 <a href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512"
@@ -381,7 +390,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-2 m-3 c-12">
+                        <div class="col l-2 m-3 c-12" data-aos="fade-up" data-aos-delay="500">
                             <div class="item">
                                 <a href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -410,7 +419,7 @@
             <div class="section3"
                 style="background: url('https://preview.colorlib.com/theme/unwind/images/xbg_1.jpg.pagespeed.ic.OPAhN-pmOO.webp')center / cover no-repeat;">
                 <div class="overlay"></div>
-                <div class="sub-heading">
+                <div class="sub-heading" data-aos="fade-up">
                     <div class="text">
                         <h3>FIND BEST HOTEL FOR LEAVING</h3>
                         <div class="sub-text">
@@ -422,13 +431,13 @@
             </div>
             <!-- section4 -->
             <div class="section4">
-                <div class="sub-heading">
+                <div class="sub-heading" data-aos="fade-up">
                     <h3>Our Rooms</h3>
                     <h2>Featured Rooms</h2>
                 </div>
                 <div class="grid wide items">
                     <div class="row">
-                        <div class="col l-4 m-6 c-12">
+                        <div class="col l-4 m-6 c-12" data-aos="flip-left">
                             <div class="item">
                                 <div class="text">
                                     <h3>Suite Room</h3>
@@ -448,7 +457,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-4 m-6 c-12">
+                        <div class="col l-4 m-6 c-12" data-aos="flip-left">
                             <div class="item">
                                 <a href="#">
                                     <div class="img"
@@ -468,7 +477,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-4 m-6 c-12">
+                        <div class="col l-4 m-6 c-12" data-aos="flip-left">
                             <div class="item">
                                 <div class="text">
                                     <h3>Suite Room</h3>
@@ -495,7 +504,7 @@
             <div class="section5"
                 style="background: url('https://preview.colorlib.com/theme/unwind/images/xbg_2.jpg.pagespeed.ic.UXXZKOuCEo.webp')  center / cover no-repeat;">
                 <div class="overlay"></div>
-                <div class="section5-text">
+                <div class="section5-text" data-aos="fade-up">
                     <p>WATCH OUR LUXURIOUS HOTEL</p>
                     <h2>Take A Tour</h2>
                     <div class="play-icon">
@@ -503,8 +512,9 @@
                     </div>
                 </div>
             </div>
+
             <!-- section6 -->
-            <div class="section6">
+            <div class="section6" data-aos="fade-up">
                 <div class="sub-heading">
                     <h3>Resto & Bar</h3>
                     <h2>Restaurant & Bar</h2>
@@ -540,7 +550,7 @@
                         </div>
                         <div class="section6-right col l-7 m-12 c-12">
                             <div class="row">
-                                <div class="col l-6 m-6 c-12">
+                                <div class="col l-6 m-6 c-12" data-aos-offset="0" data-aos="fade-down">
                                     <div class="product">
                                         <div class="img"
                                             style="background: url('https://preview.colorlib.com/theme/unwind/images/xmenu-1.jpg.pagespeed.ic.yC-EI1C2Sl.webp')  center / cover no-repeat;">
@@ -553,7 +563,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-6 m-6 c-12">
+                                <div class="col l-6 m-6 c-12" data-aos-offset="0" data-aos="fade-down"
+                                    data-aos-delay="50">
                                     <div class="product">
                                         <div class="img"
                                             style="background: url('https://preview.colorlib.com/theme/unwind/images/xmenu-2.jpg.pagespeed.ic.xuS6fI649R.webp')  center / cover no-repeat;">
@@ -566,7 +577,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-6 m-6 c-12">
+                                <div class="col l-6 m-6 c-12" data-aos-offset="0" data-aos="fade-down"
+                                    data-aos-delay="100">
                                     <div class="product">
                                         <div class="img"
                                             style="background: url('https://preview.colorlib.com/theme/unwind/images/xmenu-3.jpg.pagespeed.ic.uGV1uE0TVM.webp')  center / cover no-repeat;">
@@ -579,7 +591,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-6 m-6 c-12">
+                                <div class="col l-6 m-6 c-12" data-aos-offset="0" data-aos="fade-down"
+                                    data-aos-delay="150">
                                     <div class="product">
                                         <div class="img"
                                             style="background: url('https://preview.colorlib.com/theme/unwind/images/xmenu-4.jpg.pagespeed.ic._eupGZGDhZ.webp')  center / cover no-repeat;">
@@ -592,7 +605,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-6 m-6 c-12">
+                                <div class="col l-6 m-6 c-12" data-aos-offset="0" data-aos="fade-down"
+                                    data-aos-delay="200">
                                     <div class="product">
                                         <div class="img"
                                             style="background: url('https://preview.colorlib.com/theme/unwind/images/xmenu-5.jpg.pagespeed.ic.AjEzQKSqtq.webp')  center / cover no-repeat;">
@@ -605,7 +619,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-6 m-6 c-12">
+                                <div class="col l-6 m-6 c-12" data-aos-offset="0" data-aos="fade-down"
+                                    data-aos-delay="250">
                                     <div class="product">
                                         <div class="img"
                                             style="background: url('https://preview.colorlib.com/theme/unwind/images/xmenu-6.jpg.pagespeed.ic.SSID_aLKfC.webp')  center / cover no-repeat;">
@@ -618,7 +633,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-6 m-6 c-12">
+                                <div class="col l-6 m-6 c-12" data-aos-offset="0" data-aos="fade-down"
+                                    data-aos-delay="300">
                                     <div class="product">
                                         <div class="img"
                                             style="background: url('https://preview.colorlib.com/theme/unwind/images/xmenu-7.jpg.pagespeed.ic.E5AmxrGlDY.webp')  center / cover no-repeat;">
@@ -631,7 +647,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col l-6 m-6 c-12">
+                                <div class="col l-6 m-6 c-12" data-aos-offset="0" data-aos="fade-down"
+                                    data-aos-delay="350">
                                     <div class="product">
                                         <div class="img"
                                             style="background: url('https://preview.colorlib.com/theme/unwind/images/xmenu-8.jpg.pagespeed.ic.qnCVD_wbaQ.webp')  center / cover no-repeat;">
@@ -650,7 +667,7 @@
                 </div>
             </div>
             <!-- section7 -->
-            <div class="section7">
+            <div class="section7" data-aos="fade-up">
                 <div class="sub-heading">
                     <h3>TESTIMONIAL</h3>
                     <h2>Happy Guests</h2>
@@ -734,7 +751,7 @@
             <div class="section8">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12" data-aos="fade-up" data-aos-delay="50">
                             <div class="item-sec8">
                                 <div>
                                     <h2>38,900</h2>
@@ -742,7 +759,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12" data-aos="fade-up" data-aos-delay="100">
                             <div class="item-sec8">
                                 <div>
                                     <h2>320</h2>
@@ -750,7 +767,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12" data-aos="fade-up" data-aos-delay="150">
                             <div class="item-sec8">
                                 <div>
                                     <h2>1,000</h2>
@@ -758,7 +775,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12" data-aos="fade-up" data-aos-delay="200">
                             <div class="item-sec8">
                                 <div>
                                     <h2>587</h2>
@@ -771,13 +788,13 @@
             </div>
             <!-- section9 -->
             <div class="section9">
-                <div class="sub-heading">
+                <div class="sub-heading" data-aos="fade-up">
                     <h3>Our BLog</h3>
                     <h2>Recent Blog</h2>
                 </div>
-                <div class="grid wide">
+                <div class="grid wide" data-aos-offset="00">
                     <div class="row">
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12" data-aos="fade-up" data-aos-delay="50">
                             <div class="item-sec9">
                                 <a href="#">
                                     <div class="img"
@@ -792,7 +809,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12" data-aos="fade-up" data-aos-delay="100">
                             <div class="item-sec9">
                                 <a href="#">
                                     <div class="img"
@@ -807,7 +824,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12" data-aos="fade-up" data-aos-delay="150">
                             <div class="item-sec9">
                                 <a href="#">
                                     <div class="img"
@@ -822,7 +839,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12">
+                        <div class="col l-3 m-6 c-12" data-aos="fade-up" data-aos-delay="200">
                             <div class="item-sec9">
                                 <a href="#">
                                     <div class="img"
@@ -841,59 +858,59 @@
                 </div>
             </div>
             <!-- section10 -->
-            <div class="section10">
+            <div class="section10" data-aos-offset="00">
                 <div class="grid">
                     <div class="row">
-                        <div class="col l-2-4 m-2-4 c-12">
+                        <div class="col l-2-4 m-2-4 c-12" data-aos="fade-up" data-aos-delay="50">
                             <div class="item-sec10">
                                 <a href="#"
-                                style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-1.jpg.webp') top center / cover no-repeat;">
-                                <div class="overlay"></div>    
-                                <div class="icon-search">
+                                    style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-1.jpg.webp') top center / cover no-repeat;">
+                                    <div class="overlay"></div>
+                                    <div class="icon-search">
                                         <i class="fas fa-search"></i>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-2-4 m-2-4 c-12">
+                        <div class="col l-2-4 m-2-4 c-12" data-aos="fade-up" data-aos-delay="100">
                             <div class="item-sec10">
                                 <a href="#"
-                                style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-2.jpg.webp') top center / cover no-repeat;">
-                                <div class="overlay"></div>    
-                                <div class="icon-search">
+                                    style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-2.jpg.webp') top center / cover no-repeat;">
+                                    <div class="overlay"></div>
+                                    <div class="icon-search">
                                         <i class="fas fa-search"></i>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-2-4 m-2-4 c-12">
+                        <div class="col l-2-4 m-2-4 c-12" data-aos="fade-up" data-aos-delay="150">
                             <div class="item-sec10">
                                 <a href="#"
-                                style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-3.jpg.webp') top center / cover no-repeat;">
-                                <div class="overlay"></div>    
-                                <div class="icon-search">
+                                    style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-3.jpg.webp') top center / cover no-repeat;">
+                                    <div class="overlay"></div>
+                                    <div class="icon-search">
                                         <i class="fas fa-search"></i>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-2-4 m-2-4 c-12">
+                        <div class="col l-2-4 m-2-4 c-12" data-aos="fade-up" data-aos-delay="200">
                             <div class="item-sec10">
                                 <a href="#"
-                                style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-4.jpg.webp') top center / cover no-repeat;">
-                                <div class="overlay"></div>    
-                                <div class="icon-search">
+                                    style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-4.jpg.webp') top center / cover no-repeat;">
+                                    <div class="overlay"></div>
+                                    <div class="icon-search">
                                         <i class="fas fa-search"></i>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-2-4 m-2-4 c-12">
+                        <div class="col l-2-4 m-2-4 c-12" data-aos="fade-up" data-aos-delay="250">
                             <div class="item-sec10">
                                 <a href="#"
-                                style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-5.jpg.webp') top center / cover no-repeat;">
-                                <div class="overlay"></div>    
-                                <div class="icon-search">
+                                    style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-5.jpg.webp') top center / cover no-repeat;">
+                                    <div class="overlay"></div>
+                                    <div class="icon-search">
                                         <i class="fas fa-search"></i>
                                     </div>
                                 </a>
@@ -913,7 +930,8 @@
                                     <p>Holtel Booking</p>
                                 </div>
                                 <div class="des-sec11">
-                                    <span>A small river named Duden flows by their place and supplies it with the necessary regelialia.</span>
+                                    <span>A small river named Duden flows by their place and supplies it with the
+                                        necessary regelialia.</span>
                                 </div>
                                 <div class="icon-sec11">
                                     <a href="#">
@@ -1060,9 +1078,30 @@
         </div>
         <!-- footer -->
         <footer>
-            Copyright ©2021 All rights reserved | This template is made with  by Colorlib
+            Copyright ©2021 All rights reserved | This template is made with by Colorlib
         </footer>
+        <!-- section-video -->
+        <div class="section-video close">
+            <div class="video">
+                <div class="close-video" style="font-weight: 700; cursor: pointer;">X</div>
+                <video width="320" height="240" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                </video>
+            </div>
+        </div>
     </div>
 </body>
+<script src="assets/js/app.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            duration: 1000,
+            once: true
+            //   delay:3000
+        }
+    );
+</script>
 
 </html>

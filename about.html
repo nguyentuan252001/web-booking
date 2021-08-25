@@ -15,16 +15,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/grid.css">
-    <link rel="stylesheet" href="/assets/css/mobile.css">
-    <link rel="stylesheet" href="/assets/css/mobile-repai.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
 </head>
 <style>
-    .section1 {
-        margin-top: 0;
-    }
+    /* .section1 {
+    margin: 200px 0px;
+} */
 </style>
+
 <body>
     <div id="main">
         <div class="header">
@@ -35,7 +36,9 @@
                 </a>
             </div>
             <div class="mobile-menu">
-                <i class="fas fa-bars"><p>Menu</p></i>
+                <i class="fas fa-bars">
+                    <p>Menu</p>
+                </i>
             </div>
             <div class="nav-bar">
                 <ul>
@@ -74,21 +77,22 @@
         </div>
         <!-- container -->
         <div class="container">
-            <div class="container__introduction">
-                <div style="background: url('https://preview.colorlib.com/theme/unwind/images/xbg_3.jpg.pagespeed.ic.-P-sDxMfPG.webp') top center / cover no-repeat fixed;"
-                    class="introduction-img">
-                    <div class="overlay"></div>
-                    <div class="introduction-decription">
-                        <a href="index.html">Home
-                            <i class="fas fa-angle-right"></i>
-                        </a>
-                        <p>About Us<i class="fas fa-angle-right"></i></p>
-                        <h1>About Us</h1>
+            <div class="container__introduction"
+                style="background: url('https://preview.colorlib.com/theme/unwind/images/xbg_3.jpg.pagespeed.ic.-P-sDxMfPG.webp') top center / cover no-repeat fixed;">
+                <div class="overlay"></div>
+                <div class="text-container">
+                    <div class="heading-container" data-aos="fade-up">
+                        <div class="introduction-decription">
+                            <a href="index.html">Home<i class="fas fa-angle-right"></i>
+                            </a>
+                            <p>About<i class="fas fa-angle-right"></i></p>
+                            <h1>About Us</h1>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- section1 -->
-            <div class="section1">
+            <div class="section1" data-aos="fade-up">
                 <div class="grid wide">
                     <div class="row">
                         <div class="section1__left l-6 m-12 c-12">
@@ -210,7 +214,7 @@
             <div class="section3"
                 style="background: url('https://preview.colorlib.com/theme/unwind/images/xbg_1.jpg.pagespeed.ic.OPAhN-pmOO.webp')center / cover no-repeat;">
                 <div class="overlay"></div>
-                <div class="sub-heading">
+                <div class="sub-heading" data-aos="fade-up">
                     <div class="text">
                         <h3>FIND BEST HOTEL FOR LEAVING</h3>
                         <div class="sub-text">
@@ -224,7 +228,7 @@
             <div class="section5"
                 style="background: url('https://preview.colorlib.com/theme/unwind/images/xbg_2.jpg.pagespeed.ic.UXXZKOuCEo.webp')  center / cover no-repeat;">
                 <div class="overlay"></div>
-                <div class="section5-text">
+                <div class="section5-text" data-aos="fade-up">
                     <p>WATCH OUR LUXURIOUS HOTEL</p>
                     <h2>Take A Tour</h2>
                     <div class="play-icon">
@@ -233,7 +237,7 @@
                 </div>
             </div>
             <!-- section7 -->
-            <div class="section7">
+            <div class="section7" data-aos="fade-up">
                 <div class="sub-heading">
                     <h3>TESTIMONIAL</h3>
                     <h2>Happy Guests</h2>
@@ -314,59 +318,59 @@
                 </div>
             </div>
             <!-- section10 -->
-            <div class="section10">
+            <div class="section10" data-aos-offset="00">
                 <div class="grid">
                     <div class="row">
-                        <div class="col l-2-4 m-2-4 c-12">
+                        <div class="col l-2-4 m-2-4 c-12" data-aos="fade-up" data-aos-delay="50">
                             <div class="item-sec10">
                                 <a href="#"
-                                style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-1.jpg.webp') top center / cover no-repeat;">
-                                <div class="overlay"></div>    
-                                <div class="icon-search">
+                                    style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-1.jpg.webp') top center / cover no-repeat;">
+                                    <div class="overlay"></div>
+                                    <div class="icon-search">
                                         <i class="fas fa-search"></i>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-2-4 m-2-4 c-12">
+                        <div class="col l-2-4 m-2-4 c-12" data-aos="fade-up" data-aos-delay="100">
                             <div class="item-sec10">
                                 <a href="#"
-                                style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-2.jpg.webp') top center / cover no-repeat;">
-                                <div class="overlay"></div>    
-                                <div class="icon-search">
+                                    style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-2.jpg.webp') top center / cover no-repeat;">
+                                    <div class="overlay"></div>
+                                    <div class="icon-search">
                                         <i class="fas fa-search"></i>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-2-4 m-2-4 c-12">
+                        <div class="col l-2-4 m-2-4 c-12" data-aos="fade-up" data-aos-delay="150">
                             <div class="item-sec10">
                                 <a href="#"
-                                style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-3.jpg.webp') top center / cover no-repeat;">
-                                <div class="overlay"></div>    
-                                <div class="icon-search">
+                                    style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-3.jpg.webp') top center / cover no-repeat;">
+                                    <div class="overlay"></div>
+                                    <div class="icon-search">
                                         <i class="fas fa-search"></i>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-2-4 m-2-4 c-12">
+                        <div class="col l-2-4 m-2-4 c-12" data-aos="fade-up" data-aos-delay="200">
                             <div class="item-sec10">
                                 <a href="#"
-                                style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-4.jpg.webp') top center / cover no-repeat;">
-                                <div class="overlay"></div>    
-                                <div class="icon-search">
+                                    style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-4.jpg.webp') top center / cover no-repeat;">
+                                    <div class="overlay"></div>
+                                    <div class="icon-search">
                                         <i class="fas fa-search"></i>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="col l-2-4 m-2-4 c-12">
+                        <div class="col l-2-4 m-2-4 c-12" data-aos="fade-up" data-aos-delay="250">
                             <div class="item-sec10">
                                 <a href="#"
-                                style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-5.jpg.webp') top center / cover no-repeat;">
-                                <div class="overlay"></div>    
-                                <div class="icon-search">
+                                    style="background: url('https://preview.colorlib.com/theme/unwind/images/gallery-5.jpg.webp') top center / cover no-repeat;">
+                                    <div class="overlay"></div>
+                                    <div class="icon-search">
                                         <i class="fas fa-search"></i>
                                     </div>
                                 </a>
@@ -386,7 +390,8 @@
                                     <p>Holtel Booking</p>
                                 </div>
                                 <div class="des-sec11">
-                                    <span>A small river named Duden flows by their place and supplies it with the necessary regelialia.</span>
+                                    <span>A small river named Duden flows by their place and supplies it with the
+                                        necessary regelialia.</span>
                                 </div>
                                 <div class="icon-sec11">
                                     <a href="#">
@@ -533,9 +538,20 @@
         </div>
         <!-- footer -->
         <footer>
-            Copyright ©2021 All rights reserved | This template is made with  by Colorlib
+            Copyright ©2021 All rights reserved | This template is made with by Colorlib
         </footer>
     </div>
 </body>
+<script src="assets/js/app.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            duration: 1000,
+            once: true
+            //   delay:3000
+        }
+    );
+</script>
 
 </html>
